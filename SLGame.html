@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Snake & Ladder</title>
+  <link rel="stylesheet" href="SLGame.css" />
+</head>
+<body>  
+  
+  <h1>Snake & Ladder Game</h1>
+
+  <!-- Board container -->
+  <div class="game-container">
+    <img src="Capture.PNG" alt="Board" class="board-img" />
+    <div id="highlight" class="highlight"></div>
+    <div id="player" class="player"></div>
+      <div class="controls">
+    <img src="dice1.png" id="dice" class="dice" alt="Dice" onclick="rollDice()" />
+    <p id="message"></p>
+    <span id="info">Position: 1</span>
+  </div>
+
+  </div>
+<div class="confetti"></div>
+  <!-- NEW dice + position info -->
+
+  <!-- Script -->
+  <script src="SLGame.js"></script>
+</body>
+</html>

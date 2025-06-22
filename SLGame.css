@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                    linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                    linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                    linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+  background-size: 40px 40px;
+  background-color: #dff1d5;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+
+
+h1 {
+  margin: 8px 0;
+}
+
+.game-container {
+  position: relative;
+  display: inline-block;
+}
+
+.board-img {
+  width: 512px;
+  height: 512px;
+}
+
+.player {
+  width: 20px;
+  height: 20px;
+  background-color: #2a12b9;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.4s ease;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 512px; 
+  padding: 0 10px;
+}
+.controls button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.controls span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dice {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dice.blink {
+  animation: blink 0.5s ease alternate 4;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; transform: scale(1); }
+  50%  { opacity: 0.5; transform: scale(1.1) rotate(20deg); }
+  100% { opacity: 1; transform: scale(1) rotate(-20deg); }
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+
